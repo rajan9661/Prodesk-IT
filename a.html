@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Prodesk IT helps businesses grow online with web development, SEO, and digital marketing." />
+    <meta name="theme-color" content="#185FA5" />
+    <title>Prodesk IT — We Build Digital Experiences</title>
+    <link rel="stylesheet" href="b.css" />
+</head>
+
+<body>
+
+    <!-- ── Navbar ── -->
+    <nav class="nav">
+        <a href="#" class="nav-logo">
+            <div class="nav-logo-icon">
+                <svg viewBox="0 0 24 24">
+                    <polyline points="16 18 22 12 16 6" />
+                    <polyline points="8 6 2 12 8 18" />
+                </svg>
+            </div>
+            Prodesk IT
+        </a>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-controls">
+            <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
+                <span class="theme-icon sun" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="5" />
+                        <line x1="12" y1="1" x2="12" y2="3" />
+                        <line x1="12" y1="21" x2="12" y2="23" />
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                        <line x1="1" y1="12" x2="3" y2="12" />
+                        <line x1="21" y1="12" x2="23" y2="12" />
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                    </svg>
+                </span>
+                <span class="theme-icon moon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                    </svg>
+                </span>
+            </button>
+            <button class="nav-hamburger" onclick="toggleMenu()" aria-label="Toggle navigation" aria-expanded="false"
+                id="hamburgerBtn">
+                <svg viewBox="0 0 24 24">
+                    <line x1="3" y1="6" x2="21" y2="6" />
+                    <line x1="3" y1="12" x2="21" y2="12" />
+                    <line x1="3" y1="18" x2="21" y2="18" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#home" onclick="closeMenu()">Home</a>
+        <a href="#about" onclick="closeMenu()">About</a>
+        <a href="#services" onclick="closeMenu()">Services</a>
+        <a href="#contact" onclick="closeMenu()">Contact</a>
+    </div>
+
+    <!-- ── Hero ── -->
+    <section class="hero" id="home">
+        <div class="hero-badge"><span></span> Digital Agency · Est. 2018</div>
+        <h1>We Build <em>Digital</em><br>Experiences</h1>
+        <p class="hero-sub">Prodesk IT helps businesses grow online with thoughtful web solutions, smart SEO, and
+            marketing campaigns that actually convert.</p>
+        <div class="hero-actions">
+            <a href="#contact" class="btn-primary">
+                Get Started
+                <svg viewBox="0 0 24 24">
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                    <polyline points="12 5 19 12 12 19" />
+                </svg>
+            </a>
+            <a href="#services" class="btn-secondary">See Our Work</a>
+        </div>
+    </section>
+
+    <!-- ── Stats ── -->
+    <div class="stats">
+        <div class="stat-item">
+            <div class="stat-number">150+</div>
+            <div class="stat-label">Clients Served</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">98%</div>
+            <div class="stat-label">Satisfaction Rate</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">7+</div>
+            <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">40+</div>
+            <div class="stat-label">Team Members</div>
+        </div>
+    </div>
+
+    <!-- ── Services ── -->
+    <section class="section services-bg" id="services">
+        <div class="section-inner">
+            <div class="section-header">
+                <p class="section-eyebrow">What We Do</p>
+                <h2>Services built for growth</h2>
+                <p>Three core pillars designed to take your business further, faster.</p>
+            </div>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon blue">
+                        <svg viewBox="0 0 24 24">
+                            <circle cx="11" cy="11" r="8" />
+                            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                        </svg>
+                    </div>
+                    <h3>SEO Optimization</h3>
+                    <p>Data-driven strategies that improve your rankings, drive organic traffic, and keep you visible
+                        where it counts — on page one.</p>
+                    <a href="#" class="card-link">Learn more <svg viewBox="0 0 24 24">
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                            <polyline points="12 5 19 12 12 19" />
+                        </svg></a>
+                </div>
+                <div class="card">
+                    <div class="card-icon teal">
+                        <svg viewBox="0 0 24 24">
+                            <polyline points="16 18 22 12 16 6" />
+                            <polyline points="8 6 2 12 8 18" />
+                        </svg>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Fast, accessible, and beautifully crafted websites built for performance across every device,
+                        browser, and screen size.</p>
+                    <a href="#" class="card-link">Learn more <svg viewBox="0 0 24 24">
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                            <polyline points="12 5 19 12 12 19" />
+                        </svg></a>
+                </div>
+                <div class="card">
+                    <div class="card-icon amber">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                        </svg>
+                    </div>
+                    <h3>Digital Marketing</h3>
+                    <p>Targeted campaigns across paid, social, and email channels to grow your audience and convert more
+                        leads into loyal customers.</p>
+                    <a href="#" class="card-link">Learn more <svg viewBox="0 0 24 24">
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                            <polyline points="12 5 19 12 12 19" />
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── About / Features ── -->
+    <section class="section" id="about">
+        <div class="section-inner">
+            <div class="features-grid">
+                <div class="features-text">
+                    <p class="section-eyebrow">Why Prodesk IT</p>
+                    <h2>Built for results, not just looks</h2>
+                    <p>We've spent 7+ years helping businesses across industries build their digital presence. Every
+                        project we take on is treated as a long-term investment — not a one-time deliverable.</p>
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <div class="feature-check"><svg viewBox="0 0 24 24">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg></div>
+                            <p>Full-cycle delivery from strategy to launch and ongoing support</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-check"><svg viewBox="0 0 24 24">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg></div>
+                            <p>Transparent reporting and measurable KPIs from day one</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-check"><svg viewBox="0 0 24 24">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg></div>
+                            <p>A dedicated team — no outsourcing, no hand-offs mid-project</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-check"><svg viewBox="0 0 24 24">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg></div>
+                            <p>Scalable solutions that grow with your business needs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="features-visual">
+                    <div>
+                        <div class="visual-bar-label"><span>Organic Traffic Growth</span><span>+84%</span></div>
+                        <div class="visual-bar-track">
+                            <div class="visual-bar-fill" style="width:84%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="visual-bar-label"><span>Conversion Rate Lift</span><span>+63%</span></div>
+                        <div class="visual-bar-track">
+                            <div class="visual-bar-fill" style="width:63%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="visual-bar-label"><span>Page Speed Score</span><span>97/100</span></div>
+                        <div class="visual-bar-track">
+                            <div class="visual-bar-fill" style="width:97%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="visual-bar-label"><span>Client Retention</span><span>92%</span></div>
+                        <div class="visual-bar-track">
+                            <div class="visual-bar-fill" style="width:92%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Process ── -->
+    <section class="section process-bg">
+        <div class="section-inner">
+            <div class="section-header">
+                <p class="section-eyebrow">How We Work</p>
+                <h2>A clear process, every time</h2>
+                <p>No surprises, no scope creep. Just a clean four-step journey from brief to launch.</p>
+            </div>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-num">1</div>
+                    <h3>Discovery</h3>
+                    <p>We learn your goals, audience, and competitive landscape before writing a single line of code.
+                    </p>
+                </div>
+                <div class="process-step">
+                    <div class="step-num">2</div>
+                    <h3>Strategy</h3>
+                    <p>We map out a custom plan — content, architecture, channels — aligned to your business objectives.
+                    </p>
+                </div>
+                <div class="process-step">
+                    <div class="step-num">3</div>
+                    <h3>Execution</h3>
+                    <p>Design, development, and campaign build-out with weekly check-ins and milestone reviews.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-num">4</div>
+                    <h3>Growth</h3>
+                    <p>We measure, iterate, and optimize continuously so your investment keeps compounding over time.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Testimonials ── -->
+    <section class="section">
+        <div class="section-inner">
+            <div class="section-header">
+                <p class="section-eyebrow">Client Stories</p>
+                <h2>What our clients say</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <blockquote>"Prodesk IT transformed our online presence completely. Organic traffic tripled in six
+                        months and leads are up 80%."</blockquote>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" style="background:#E6F1FB;color:#185FA5;">RS</div>
+                        <div>
+                            <div class="author-name">Rohit Sharma</div>
+                            <div class="author-role">CEO, RetailAxis</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <blockquote>"The team delivered a blazing-fast website on time and on budget. Their attention to
+                        detail is genuinely impressive."</blockquote>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" style="background:#E1F5EE;color:#0F6E56;">PK</div>
+                        <div>
+                            <div class="author-name">Priya Kapoor</div>
+                            <div class="author-role">Founder, Nimble Foods</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <blockquote>"Our ad spend ROI went from 1.8× to 4.2× in the first quarter. Prodesk's marketing team
+                        really knows their craft."</blockquote>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" style="background:#FAEEDA;color:#854F0B;">AM</div>
+                        <div>
+                            <div class="author-name">Arjun Mehta</div>
+                            <div class="author-role">Head of Growth, UrbanLoft</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── CTA Banner ── -->
+    <div class="cta-banner" id="contact">
+        <h2>Ready to grow your business?</h2>
+        <p>Let's talk about what Prodesk IT can do for you. Free consultation, no strings attached.</p>
+        <a href="mailto:hello@prodeskIT.com" class="btn-white">
+            Start a Conversation
+            <svg viewBox="0 0 24 24">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+            </svg>
+        </a>
+    </div>
+
+    <!-- ── Footer ── -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <div class="footer-logo-icon">
+                        <svg viewBox="0 0 24 24">
+                            <polyline points="16 18 22 12 16 6" />
+                            <polyline points="8 6 2 12 8 18" />
+                        </svg>
+                    </div>
+                    Prodesk IT
+                </div>
+                <p>We build digital experiences that help businesses grow online — from launch day through long-term
+                    scale.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Twitter">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.43.36a9 9 0 0 1-2.88 1.1A4.52 4.52 0 0 0 16.11 0c-2.5 0-4.52 2-4.52 4.5 0 .35.04.7.11 1.03C7.69 5.37 4.07 3.58 1.64.9a4.5 4.5 0 0 0 1.4 6.01A4.49 4.49 0 0 1 1 6.48v.05c0 2.18 1.55 4 3.6 4.41a4.52 4.52 0 0 1-2.04.08 4.52 4.52 0 0 0 4.22 3.13A9.05 9.05 0 0 1 0 15.54 12.8 12.8 0 0 0 6.92 17.5c8.3 0 12.84-6.88 12.84-12.84 0-.2 0-.39-.01-.58A9.17 9.17 0 0 0 23 2.1z" />
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                            <rect x="2" y="9" width="4" height="12" />
+                            <circle cx="4" cy="4" r="2" />
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Press</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#">SEO</a></li>
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">Digital Marketing</a></li>
+                    <li><a href="#">Consulting</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="mailto:hello@prodeskIT.com">hello@prodeskIT.com</a></li>
+                    <li><a href="tel:+911234567890">+91 12345 67890</a></li>
+                    <li><a href="#">Patna, Bihar, India</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Prodesk IT. All rights reserved.</p>
+            <p>Privacy Policy · Terms of Service</p>
+        </div>
+    </footer>
+
+    <script src="c.js"></script>
+</body>
+
+</html>
